@@ -1,0 +1,55 @@
+@import "../../main.scss";
+
+.heading {
+  letter-spacing: 0.2rem;
+  line-height: 4rem;
+  backface-visibility: hidden;
+}
+.lineOne {
+  animation: moveInLeft 1s;
+}
+.lineTwo {
+  animation: moveInRight 1s;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  80% {
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.introSection {
+  height: 30rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.529),
+    rgba(240, 232, 232, 0.81)
+  );
+  margin: 10rem 0;
+  transform: skewY(-6deg);
+}
+.introSection > * {
+  transform: skewY(6deg);
+}
+.cardWrapper{
+  margin-top: 8rem;
+}

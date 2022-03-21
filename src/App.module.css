@@ -1,0 +1,14 @@
+html{
+    /* font-size: 62.5%;  10px  */
+}
+.mainImg {
+    background-image: 
+    /* linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.262),
+        rgba(240, 232, 232, 0.81)
+      ), */ url("./resources/5231801.jpg");
+    background-size: cover;
+    background-position: top;
+    /* clip-path: polygon(0 20%,100% 0,100% 80vh,0 100%); */
+  }

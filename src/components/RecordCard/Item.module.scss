@@ -1,0 +1,11 @@
+@import "../../main.scss";
+
+.label {
+  color: $primary;
+  font-size: 0.9rem;
+}
+.wrapper {
+  background-color: $secondaryCustom;
+  box-shadow: 5px 5px 20px 1px #00000097;
+  border-radius: 20px;
+}

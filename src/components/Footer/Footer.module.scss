@@ -1,0 +1,44 @@
+@import "../../main.scss";
+
+.footer {
+  height: 16rem;
+  background-color: $secondaryCustom;
+}
+.footer ul{
+    padding-left: 0;
+}
+.footerLogo {
+  width: 16rem;
+  text-transform: uppercase;
+}
+.footerNav {
+    // border-top: 1px solid grey;
+    padding-top: 1rem;
+}
+.footerList {
+  list-style: none;
+  display: flex;
+}
+.footerItem {
+    transition: all .2s;
+
+    &:hover,
+    &:active {
+      transform: rotate(-4deg) scale(1.1);
+    }
+}
+.footerItem:not(:last-child) {
+  margin-right: 1rem;
+}
+.footerLink,
+.footerLink:visited {
+  color: grey;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:active {
+    color: $primary;
+    box-shadow: 0 0.5rem 1rem rgba(black, .4);
+  }
+}

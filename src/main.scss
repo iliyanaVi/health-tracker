@@ -1,0 +1,14 @@
+//custom vars
+$primary: #9b88d7;
+$newPink: rgb(220, 134, 134);
+$customError: rgba(162, 10, 10, 1);
+$secondaryCustom: #eee4e5c1;
+$customSuccess: #B4F8C8;
+
+//import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.error {
+  color: $customError;
+}
+

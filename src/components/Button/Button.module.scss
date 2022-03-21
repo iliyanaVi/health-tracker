@@ -1,0 +1,19 @@
+.btnPrimary{
+    background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+      );
+      color: #0c1a2b;
+      border-color: #0c1a2b;
+      width: 15rem;
+      font-size: 1.6rem;
+}
+.btnPrimary:hover{
+    transform: translateY(-.2rem);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+.btnPrimary:active{
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+}

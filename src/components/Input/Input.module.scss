@@ -1,0 +1,15 @@
+@import "../../main.scss";
+
+.input{
+    border-radius: 2px !important;
+    border: none !important;
+    border-bottom: 3px solid transparent !important;
+}
+.input:focus{
+    outline: none !important;
+    box-shadow: 0 1rem 2rem rgba(black, .1) !important;
+    border-bottom: 3px solid $primary !important;
+}
+.input:focus:invalid{
+    border-bottom: 3px solid $customError !important;
+}
