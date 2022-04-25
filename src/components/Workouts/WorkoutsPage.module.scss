@@ -1,0 +1,12 @@
+@import "../../main.scss";
+
+.workoutsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@include media-breakpoint-up(md) {
+  .workoutsWrapper {
+    flex-direction: row;
+  }
+}

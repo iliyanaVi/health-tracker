@@ -69,7 +69,7 @@ function Workouts() {
   };
 
   return (
-    <div className={`d-flex justify-content-between`}>
+    <div className={`${styles.workoutsWrapper}`}>
       <div className={`${styles.formWrapper} my-5`}>
         <WorkoutForm
           onSubmit={submitHandler}

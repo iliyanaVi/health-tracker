@@ -50,6 +50,24 @@
 .introSection > * {
   transform: skewY(6deg);
 }
-.cardWrapper{
-  margin-top: 8rem;
+.cardWrapper {
+  margin-top: 1rem;
+}
+.introText {
+  padding-top: 1rem;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.7rem;
+}
+.buttonWrapper {
+  padding-top: 1.5rem;
+}
+.commentsSection {
+  padding: 3rem 0;
+}
+
+@include media-breakpoint-up(lg) {
+  .introText {
+    width: 50%;
+  }
 }

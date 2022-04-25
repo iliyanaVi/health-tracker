@@ -48,7 +48,7 @@ function Header() {
                 />
               )}
             </div>
-            <ul></ul>
+            {/* <ul></ul> */}
           </div>
         </div>
       </nav>
