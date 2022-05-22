@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import LoginContext from "../../context/login-context";
 
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import Form from "./../../components/Form/Form";
 import Input from "../../components/Input/Input";
@@ -14,6 +15,7 @@ import styles from "./LoginPage.module.scss";
 
 function LoginPage() {
   let navigate = useNavigate();
+  const { t } = useTranslation();
 
   const loginContext = useContext(LoginContext);
   const [isLoading, setIsLoading] = useState(false);
@@ -99,7 +101,7 @@ function LoginPage() {
             <Input
               type="email"
               id="email"
-              label="Email"
+              label={t("common.email")}
               onChange={emailOnChange}
               onBlur={emailOnBlur}
               value={email || ""}
@@ -110,7 +112,7 @@ function LoginPage() {
               <Input
                 type={inputType}
                 id="password"
-                label="Password"
+                label={t("common.password")}
                 onChange={passwordOnChange}
                 onBlur={passwordOnBlur}
                 value={password || ""}

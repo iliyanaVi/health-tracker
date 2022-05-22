@@ -9,6 +9,7 @@ function Comment({ id, name, comment }) {
       <div className={`${styles.commentText}`}>
         <p>{comment}</p>
       </div>
+      <figcaption className={`${styles.nameCaptionSm} m-0`}>{name}</figcaption>
     </div>
   );
 }

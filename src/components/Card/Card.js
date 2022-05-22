@@ -22,7 +22,7 @@ function Card({ heading, route }) {
   return (
     <div
       onClick={clickHandler}
-      className={`d-flex justify-content-center align-items-center w-25 ${styles.optionWrapper}`}
+      className={`d-flex justify-content-center align-items-center mx-5 mb-3 ${styles.optionWrapper}`}
     >
       <p className="">{heading}</p>
     </div>

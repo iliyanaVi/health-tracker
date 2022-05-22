@@ -2,13 +2,14 @@
 
 .comment {
   width: 75%;
-  height: 10rem;
+  height: 20rem;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem #6b6b6b;
   padding: 1rem;
   background-color: $gray-100;
   border-radius: 0.5rem;
   display: flex;
+  flex-direction: column;
 }
 .commentImg {
   width: 8rem;
@@ -18,16 +19,33 @@
   position: relative;
 }
 
-.nameCaption{
+@include media-breakpoint-up(md) {
+  .nameCaptionSm {
+    display: none;
+  }
+}
+.nameCaption {
+  display: none;
+}
+@include media-breakpoint-up(md) {
+  .nameCaption {
+    display: inline-block;
     position: absolute;
     top: 50%;
     left: 50%;
     color: white;
-    transform: translate(-50%,20%);
+    transform: translate(-50%, 20%);
     opacity: 0;
-    transition: all .5s;
-}
-.comment:hover .nameCaption{
+    transition: all 0.5s;
+  }
+  .comment:hover .nameCaption {
     opacity: 1;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+  }
+}
+@include media-breakpoint-up(md) {
+  .comment {
+    flex-direction: row;
+    height: 10rem;
+  }
 }

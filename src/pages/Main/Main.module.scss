@@ -52,6 +52,7 @@
 }
 .cardWrapper {
   margin-top: 1rem;
+  flex-direction: column;
 }
 .introText {
   padding-top: 1rem;
@@ -69,5 +70,11 @@
 @include media-breakpoint-up(lg) {
   .introText {
     width: 50%;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .cardWrapper {
+    flex-direction: row;
   }
 }

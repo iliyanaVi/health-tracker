@@ -1,6 +1,7 @@
+@import "../../main.scss";
+
 .optionWrapper {
   height: 18rem;
-  width: 25rem;
   background: radial-gradient(
     circle,
     rgba(238, 174, 202, 1) 0%,
@@ -11,8 +12,13 @@
   border-radius: 0.5rem;
 }
 .optionWrapper:hover {
-    box-shadow: 5px 5px 20px 5px #6B6B6B;
-    transition: 0.4s;
-    text-decoration: underline;
-    cursor: pointer;
+  box-shadow: 5px 5px 20px 5px #6b6b6b;
+  transition: 0.4s;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@include media-breakpoint-up(sm) {
+  .optionWrapper {
+    width: 25rem;
+  }
 }

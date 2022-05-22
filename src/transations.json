@@ -1,0 +1,52 @@
+{
+  "en": {
+    "translation": {
+      "common": { "email": "Email", "password": "Password" },
+      "mainPage": {
+        "trackWorkouts": "Track your workouts, food intake and weight.",
+        "allInOnePlace": "All in one place",
+        "startTracking": "Start tracking your progress, all in one place. ",
+        "intro": "Often we have diffrent apps to track our food intake, calories,workouts and so on and in that way we don't have much visibility of the overall process. Here you can have a record of everything and in addition with different charts so that you have more understanding of your journey to a healthy life.",
+        "signUp": "Sign up to get started",
+        "login": "Already have an account?",
+        "feedbackHeader": "We help people achieve their goals",
+        "signUpText": "Sign Up",
+        "loginText": "Log in"
+      },
+      "foodIntakePage": {
+        "trackFood": "Track your food intake"
+      },
+      "trackWeightPage": {
+        "trackWeight": "Track your workouts"
+      },
+      "trackWorkoutsPage": {
+        "trackWorkouts": "Track your workouts"
+      }
+    }
+  },
+  "bg": {
+    "translation": {
+      "common": { "email": "Имейл", "password": "Парола" },
+      "mainPage": {
+        "trackWorkouts": "Проследявайте тренировките, хранителния прием и теглото си",
+        "allInOnePlace": "Всичко на едно място",
+        "startTracking": "Започнете да следите прогреса си, всичко на едно място",
+        "intro": "Често имаме различни приложения за следене на калориите и храните, които приемаме, тренировки и т.н и в този случай нямаме възможност да следим много добре цялостния процес. Тук можете да имате запис на всичко и в допълнение - различни графики, за да разбирате по-добре вашето пътешествие към по-здравословен живот",
+        "signUp": "Регистрирайте се, за да започнете",
+        "login": "Вече имате профил?",
+        "feedbackHeader": "Помагаме на хората да постигнат целите си",
+        "signUpText": "Регистрация",
+        "loginText": "Вход"
+      },
+      "foodIntakePage": {
+        "trackFood": "Следете приема си на храна"
+      },
+      "trackWeightPage": {
+        "trackWeight": "Следете теглото си"
+      },
+      "trackWorkoutsPage": {
+        "trackWorkouts": "Следете тренировките си"
+      }
+    }
+  }
+}
