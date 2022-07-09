@@ -9,7 +9,9 @@ function WorkoutsPage() {
   return (
     <WorkoutProvider>
       <section className={`container-sm text-center ${styles.workoutSection}`}>
-        <h2 className={`${styles.heading} mb-5`}>{t("trackWorkouts")}</h2>
+        <h2 className={`${styles.heading} mb-5`}>
+          {t("trackWorkoutsPage.trackWorkouts")}
+        </h2>
         <Workouts />
       </section>
     </WorkoutProvider>

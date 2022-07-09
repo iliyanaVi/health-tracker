@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import { useContext, useEffect, useState } from "react";
 import WorkoutsContext from "../../context/workouts-context";
 
@@ -13,6 +15,8 @@ import useInput from "../../hooks/use-input";
 import styles from "./WorkoutsPage.module.scss";
 
 function Workouts() {
+  const { t } = useTranslation();
+
   const workoutsCtx = useContext(WorkoutsContext);
   console.log(workoutsCtx.workouts);
   let [isFirstRender, setIsFirstRender] = useState(false);
@@ -80,39 +84,39 @@ function Workouts() {
               <Input
                 type="text"
                 id="workoutType"
-                label="Workout type"
+                label={t("trackWorkoutsPage.workoutType")}
                 onChange={workoutTypeOnChange}
                 onBlur={workoutTypeOnBlur}
                 value={workoutType || ""}
               />
               {!isFirstRender && workoutTypeHasError && (
-                <InputError errorText="Please provide workout type" />
+                <InputError errorText={t("trackWorkoutsPage.provideWorkout")} />
               )}
             </InputWrapper>
             <InputWrapper>
               <Input
                 type="number"
                 id="calories-burned"
-                label="Calories burned"
+                label={t("common.caloriesBurned")}
                 onChange={caloriesBurnedOnChange}
                 onBlur={caloriesBurnedOnBlur}
                 value={caloriesBurned || ""}
               />
               {!isFirstRender && caloriesBurnedHasError && (
-                <InputError errorText="Please provide amount larger than 0" />
+                <InputError errorText={t("common.amountAbovezeroError")} />
               )}
             </InputWrapper>
             <InputWrapper>
               <Input
                 type="number"
                 id="duration"
-                label="Duration"
+                label={t("common.duration")}
                 onChange={durationOnChange}
                 onBlur={durationOnBlur}
                 value={duration || ""}
               />
               {!isFirstRender && durationHasError && (
-                <InputError errorText="Please provide amount larger than zero" />
+                <InputError errorText={t("common.amountAbovezeroError")} />
               )}
             </InputWrapper>
           </div>

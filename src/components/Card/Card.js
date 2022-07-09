@@ -3,18 +3,18 @@ import { useContext, useState } from "react";
 import LoginContext from "../../context/login-context";
 import styles from "./Card.module.scss";
 
-function Card({ heading, route }) {
+function Card({ heading, index }) {
   const loginContext = useContext(LoginContext);
   const isLoggedIn = loginContext.isLoggedIn;
 
   let navigate = useNavigate();
 
   const clickHandler = () => {
-    if (route === "Track workouts") {
+    if (index === 0) {
       navigate("/track-workouts");
-    } else if (route === "Track food intake") {
+    } else if (index === 1) {
       navigate("/track-food-intake");
-    } else if (route === "Track weight") {
+    } else if (index === 2) {
       navigate("/track-weight");
     }
   };

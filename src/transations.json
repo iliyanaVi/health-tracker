@@ -1,7 +1,13 @@
 {
   "en": {
     "translation": {
-      "common": { "email": "Email", "password": "Password" },
+      "common": {
+        "email": "Email",
+        "password": "Password",
+        "caloriesBurned": "Calories burned",
+        "duration": "Duration",
+        "amountAbovezeroError": "Please provide amount larger than zero"
+      },
       "mainPage": {
         "trackWorkouts": "Track your workouts, food intake and weight.",
         "allInOnePlace": "All in one place",
@@ -20,13 +26,21 @@
         "trackWeight": "Track your workouts"
       },
       "trackWorkoutsPage": {
-        "trackWorkouts": "Track your workouts"
+        "trackWorkouts": "Track your workouts",
+        "workoutType": "Workout type",
+        "provideWorkout": "Please provide workout type"
       }
     }
   },
   "bg": {
     "translation": {
-      "common": { "email": "Имейл", "password": "Парола" },
+      "common": {
+        "email": "Имейл",
+        "password": "Парола",
+        "caloriesBurned": "Изгорени калории",
+        "duration": "Продължителност",
+        "amountAbovezeroError": "Моля въведете количество по-голямо от 0"
+      },
       "mainPage": {
         "trackWorkouts": "Проследявайте тренировките, хранителния прием и теглото си",
         "allInOnePlace": "Всичко на едно място",
@@ -45,7 +59,9 @@
         "trackWeight": "Следете теглото си"
       },
       "trackWorkoutsPage": {
-        "trackWorkouts": "Следете тренировките си"
+        "trackWorkouts": "Следете тренировките си",
+        "workoutType": "Тип тренировка",
+        "provideWorkout": "Моля въведете типа тренировка"
       }
     }
   }

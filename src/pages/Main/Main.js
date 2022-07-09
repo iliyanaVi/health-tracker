@@ -10,13 +10,17 @@ import Button from "../../components/Button/Button";
 
 import styles from "./Main.module.scss";
 
-const options = ["Track workouts", "Track food intake", "Track weight"];
-
 function Main() {
+  const { t } = useTranslation();
+
+  const options = [
+    t("trackWorkoutsPage.trackWorkouts"),
+    t("foodIntakePage.trackFood"),
+    t("trackWeightPage.trackWeight"),
+  ];
   const loggedInCtx = useContext(LoginContext);
   const isLoggedIn = loggedInCtx.isLoggedIn;
   const navigate = useNavigate();
-  const { t } = useTranslation();
 
   return (
     <>
@@ -38,9 +42,7 @@ function Main() {
             className={`${styles.cardWrapper} d-flex flex-wrap justify-content-center py-5`}
           >
             {options.map((option, index) => {
-              return (
-                <Card key={index} heading={option} route={options[index]} />
-              );
+              return <Card key={index} heading={option} index={index} />;
             })}
           </div>
         </section>
@@ -72,12 +74,6 @@ function Main() {
                 }}
               />
             </div>
-
-            <aside>
-              <div></div>
-              <div></div>
-              <div></div>
-            </aside>
           </div>
         </section>
       )}

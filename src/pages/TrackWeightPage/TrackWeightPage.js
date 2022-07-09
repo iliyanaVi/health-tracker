@@ -11,7 +11,7 @@ function TrackWeightPage() {
       <section
         className={`vh-100 container-sm text-center ${styles.workoutSection}`}
       >
-        <h2 className={styles.heading}>{t("trackWeight")}</h2>
+        <h2 className={styles.heading}>{t("trackWeightPage.trackWeight")}</h2>
         <TrackWeight />
         {/* it will show difference in the kg and report of the weight tracking process */}
       </section>
